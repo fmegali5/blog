@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* React Quill Custom Styles */
+.ql-container {
+  min-height: 200px;
+  font-size: 16px;
+}
+
+.ql-editor {
+  min-height: 200px;
+}
+
+/* Post content styling */
+.post-content h1 {
+  @apply text-3xl font-bold my-4;
+}
+
+.post-content h2 {
+  @apply text-2xl font-bold my-3;
+}
+
+.post-content h3 {
+  @apply text-xl font-bold my-2;
+}
+
+.post-content p {
+  @apply my-2 leading-relaxed;
+}
+
+.post-content ul, .post-content ol {
+  @apply my-2 ml-6;
+}
+
+.post-content li {
+  @apply my-1;
+}
+
+.post-content blockquote {
+  @apply border-l-4 border-indigo-500 pl-4 italic my-4;
+}
+
+.post-content a {
+  @apply text-indigo-600 hover:underline;
+}
+
+.post-content img {
+  @apply max-w-full h-auto my-4 rounded-lg;
+}
